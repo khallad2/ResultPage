@@ -1,4 +1,9 @@
 # Project is created from scratch using ng new app
+[![N|Solid](./README-images/Mobile.png)]()
+[![N|Solid](./README-images/IPad.png)]()
+[![N|Solid](./README-images/IPad-port.png)]()
+[![N|Solid](./README-images/Laptop.png)]()
+* run "npm install" to install dependencies 
 * Angular material used for design beside bootstrap.
 * Angular-8.3.19, Typescript-3.5.3 and SASS.
 * Simple Unit-test cases are written to validate inputs and attributes rendering. 
