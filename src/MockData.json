@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "tariffName": "VS-box",
+    "downloads": 123,
+    "uploads": 346,
+    "price": 236,
+    "benefits": [
+      "benefit 1", "benefit 2", "benefit 3"
+    ]
+  },
+  {
+    "id": 2,
+    "tariffName": "S-Box",
+    "downloads": 234,
+    "uploads": 235,
+    "price": 235,
+    "benefits": [
+      "benefit 1", "benefit 2", "benefit 3"
+    ]
+  },
+  {
+    "id": 3,
+    "tariffName": "L-Box",
+    "downloads": 345,
+    "uploads": 124,
+    "price": 347,
+    "benefits": [
+      "benefit 1", "benefit 2", "benefit 3"
+    ]
+  },
+  {
+    "id": 4,
+    "tariffName": "Xl-Box",
+    "downloads": 567,
+    "uploads": 423,
+    "price": 660,
+    "benefits": [
+      "benefit 1", "benefit 2", "benefit 3"
+    ]
+  }
+
+]

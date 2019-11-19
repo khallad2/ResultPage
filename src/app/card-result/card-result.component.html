@@ -1,0 +1,62 @@
+<div class="content" >
+  <mat-card>
+
+    <div class="row">
+      <div class="col-3">
+        <span id="tariff-name">{{tariffIndex + 1}}. {{tariffData.tariffName}}</span>
+      </div>
+
+      <mat-card-content >
+        <div class="row">
+          <div class="row col-8">
+            <div class="col-2 float-right">
+              <i class="material-icons" [ngClass]="{'is-filtered': isFiltered.byDownloads === true}">
+                cloud_download
+              </i>
+            </div>
+            <div id="downloads" class="col-4 float-right" [ngClass]="{'is-filtered': isFiltered.byDownloads === true}">
+              <span>  {{tariffData.downloads}} </span>
+              <span>Mbit/S</span>
+            </div>
+            <div class="col-2 for-tab float-right">
+              <i class="material-icons" [ngClass]="{'is-filtered': isFiltered.byUploads === true}">
+                cloud_upload
+              </i>
+            </div>
+            <div id="uploads" class="col-4 for-tab float-right" [ngClass]="{'is-filtered': isFiltered.byUploads === true}">
+              <span>  {{tariffData.uploads}} </span>
+              <span>Mbit/S</span>
+            </div>
+          </div>
+
+          <div id="benefits" class="col-3 float-right">
+            <ul *ngFor="let benefit of  tariffData.benefits">
+              <li>{{benefit}}</li>
+            </ul>
+          </div>
+
+          <div class="col-1">
+            <span id="price" [ngClass]="{'is-filtered': isFiltered.byPrice === true}">
+              {{tariffData.price | currency: 'EUR' }}
+            </span>
+          </div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-actions class="col-1 float-right">
+        <div id="button-mobile">
+          <button mat-mini-fab aria-label="Example icon-button with a heart icon">
+            <p> >> </p>
+          </button>
+        </div>
+        <div id="button-tab">
+        <button mat-mini-fab aria-label="Example icon-button with a heart icon">
+          <p> >> </p>
+        </button>
+          <p> to the tariff</p>
+        </div>
+      </mat-card-actions>
+
+    </div>
+  </mat-card>
+</div>

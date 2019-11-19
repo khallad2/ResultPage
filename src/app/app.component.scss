@@ -1,0 +1,115 @@
+   mat-toolbar {
+    margin-bottom: 0.5rem;
+  }
+
+ .material-icons{
+   cursor: pointer;
+ }
+
+ #filters-toolbar {
+    background-color: #F28A3C;
+    color: #FFFFFF;
+    font-family: "Source Code Pro", serif ;
+    align-content: center;
+ }
+
+  #logo img {
+    max-width: 50%;
+  }
+
+  .filters {
+    font: 14px "Source Code Pro", serif ;
+    cursor: pointer;
+  }
+
+  .is-filtered {
+    color: green;
+  }
+
+ .card-opt1 {
+   padding-left: 1rem;
+ }
+
+ .card-opt2 {
+   padding-left: 0.5rem;
+ }
+
+ /*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+ @media (min-width: 1281px) {
+   .material-icons {
+     font-size: 40px;
+   }
+   #filter-by {
+     font: 30px "Source Code Pro", serif ;
+   }
+ }
+
+ /*
+   ##Device = Laptops, Desktops
+   ##Screen = B/w 1025px to 1280px
+ */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+   .material-icons {
+     font-size: 40px;
+   }
+   #filter-by {
+     font: 30px "Source Code Pro", serif ;
+   }
+ }
+
+ /*
+   ##Device = Tablets, Ipads (portrait)
+   ##Screen = B/w 768px to 1024px
+ */
+ @media (min-width: 768px) and (max-width: 1024px) {
+   .material-icons {
+     font-size: 30px;
+   }
+   #filter-by {
+     font: 30px "Source Code Pro", serif ;
+   }
+ }
+
+ /*
+   ##Device = Tablets, Ipads (landscape)
+   ##Screen = B/w 768px to 1024px
+ */
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   .material-icons {
+     font-size: 30px;
+   }
+   #filter-by {
+     font: 30px "Source Code Pro", serif ;
+   }
+ }
+
+ /*
+   ##Device = Low Resolution Tablets, Mobiles (Landscape)
+   ##Screen = B/w 481px to 767px
+ */
+ @media (min-width: 481px) and (max-width: 767px) {
+   .material-icons {
+     font-size: 20px;
+     align-items: center;
+   }
+   #filter-by{
+     display: none;
+   }
+ }
+
+ /*
+   ##Device = Most of the Smartphones Mobiles (Portrait)
+   ##Screen = B/w 320px to 479px
+ */
+ @media (min-width: 320px) and (max-width: 480px) {
+   .material-icons {
+     font-size: 16px;
+   }
+   #filter-by {
+     display: none;
+   }
+ }
+

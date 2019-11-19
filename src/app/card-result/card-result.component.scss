@@ -1,0 +1,209 @@
+mat-card {
+  color: #F28A3C;
+  font-style: italic;
+  margin: 0.5rem 0.25rem 0.25rem 0.25rem;
+}
+
+.is-filtered {
+  color: green;
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  mat-card-content{
+    font: 30px "Source Code Pro", serif ;
+  }
+
+  #tariff-name {
+    font: 50px "Source Code Pro", serif ;
+    font-style: italic;
+  }
+
+  #button-tab {
+    width: auto;
+    text-align: center;
+    color: #F28A3C;
+    float: right;
+  }
+
+  .material-icons {
+    font-size: 45px;
+  }
+
+  #button-mobile {
+    display: none;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  mat-card-content{
+    font: 30px "Source Code Pro", serif ;
+  }
+
+  #tariff-name {
+    font: 50px "Source Code Pro", serif ;
+    font-style: italic;
+  }
+
+  .material-icons {
+    font-size: 40px;
+  }
+
+  #button-tab {
+    width: auto;
+    text-align: center;
+    color: #F28A3C;
+    float: right;
+  }
+
+  #button-mobile {
+    display: none;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  mat-card-content{
+    font: 20px "Source Code Pro", serif ;
+  }
+
+  #tariff-name {
+    font: 30px "Source Code Pro", serif ;
+    font-style: italic;
+  }
+
+  #button-tab {
+    width: auto;
+    text-align: center;
+    color: #F28A3C;
+    float: right;
+  }
+
+  #button-mobile {
+    display: none;
+  }
+
+  .material-icons {
+    font-size: 30px;
+  }
+
+  #benefits{
+    display: none;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  mat-card-content{
+    font: 20px "Source Code Pro", serif ;
+  }
+
+  #tariff-name {
+    font: 30px "Source Code Pro", serif ;
+    font-style: italic;
+  }
+
+  #button-mobile {
+    display: none;
+  }
+
+  .material-icons {
+    font-size: 30px;
+  }
+
+  #benefits{
+    display: none;
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  mat-card-content{
+    font: 16px "Source Code Pro", serif ;
+  }
+
+  #tariff-name {
+    font: 20px "Source Code Pro", serif ;
+    font-style: italic;
+  }
+
+  #button-mobile {
+    height: 2.5rem;
+    width: 1rem;
+    color: #F28A3C;
+    float: right;
+  }
+
+  .material-icons {
+    font-size: 20px;
+    align-items: center;
+  }
+
+  #button-tab {
+    display: none;
+  }
+
+  .for-tab{
+    display: none;
+  }
+
+  #benefits{
+    display: none;
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  mat-card-content{
+    font: 12px "Source Code Pro", serif ;
+  }
+
+  #tariff-name {
+    font: 14px "Source Code Pro", serif ;
+    font-style: italic;
+  }
+
+  #button-mobile {
+    height: 2.5rem;
+    width: 1rem;
+    color: #F28A3C;
+    float: right;
+  }
+
+  .material-icons {
+    font-size: 16px;
+  }
+
+  #button-tab {
+    display: none;
+  }
+
+  .for-tab{
+    display: none;
+  }
+
+  #benefits{
+    display: none;
+  }
+}
+
+

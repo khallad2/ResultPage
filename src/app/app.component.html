@@ -1,0 +1,55 @@
+<mat-toolbar id="main-toolbar">
+  <img src="/assets/verivox-logo.png" id="logo" alt="logo"/>
+
+</mat-toolbar>
+
+<main role="main">
+  <mat-toolbar id="filters-toolbar" class="mat-action-row">
+
+      <div class="col-3" id="filter-by">
+        <span >
+          Sort-by
+        </span>
+      </div>
+
+      <div class="col-3" (click)="filterByDownloads()">
+        <div class="row col-3 ">
+          <i class="material-icons card-opt1" [ngClass]="{'is-filtered': isFiltered.byDownloads === true}">
+            cloud_download
+          </i>
+        </div>
+        <div class="row col-3">
+          <span class="filters" [ngClass]="{'is-filtered': isFiltered.byDownloads === true}">downloads</span>
+        </div>
+      </div>
+
+      <div class="col-3" (click)="filterByUploads()">
+        <div class="row col-3">
+          <i class="material-icons card-opt2" [ngClass]="{'is-filtered': isFiltered.byUploads === true}">
+            cloud_upload
+          </i>
+        </div>
+        <div class="row col-3">
+          <span class="filters" [ngClass]="{'is-filtered': isFiltered.byUploads === true}">uploads</span>
+        </div>
+      </div>
+
+      <div class="col-3" (click)="filterByPrice()">
+        <div class="row col-3">
+          <i class="material-icons" [ngClass]="{'is-filtered': isFiltered.byPrice === true}">
+            attach_money
+          </i>
+        </div>
+        <div class="row col-3">
+          <span class="filters" [ngClass]="{'is-filtered': isFiltered.byPrice === true}">price</span>
+        </div>
+      </div>
+
+  </mat-toolbar>
+
+  <div *ngFor="let tariff of allTariffs  ; let i = index">
+    <app-card-result [tariffData]="tariff" [tariffIndex]="i" [isFiltered]="isFiltered"></app-card-result>
+  </div>
+</main>
+
+<router-outlet></router-outlet>
